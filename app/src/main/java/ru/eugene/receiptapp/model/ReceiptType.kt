@@ -30,8 +30,6 @@ enum class ReceiptType {
                 DINNER -> return 2
                 DESSERT -> return 3
             }
-
-            return 0
         }
     }
 }

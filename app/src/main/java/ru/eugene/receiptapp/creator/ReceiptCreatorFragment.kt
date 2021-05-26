@@ -47,6 +47,7 @@ class ReceiptCreatorFragment : Fragment() {
         bodyTextEditor = view.findViewById(R.id.receipt_body)
         typeSelector = view.findViewById(R.id.group_spinner)
         if (receiptToEdit != null) {
+
             titleTextEditor.setText(receiptToEdit?.title)
             bodyTextEditor.setText(receiptToEdit?.body)
             // Oh no, it's retarded
@@ -90,7 +91,6 @@ class ReceiptCreatorFragment : Fragment() {
 
     private fun onSaveSuccess() {
         activity?.runOnUiThread(Runnable {
-            // TODO: I guess we have to notify previous activity that we are done?
             parentFragmentManager.popBackStackImmediate()
         })
     }
