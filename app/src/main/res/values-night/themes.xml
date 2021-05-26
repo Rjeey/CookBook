@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ReceiptApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/PrimaryClr1</item>
+        <item name="colorPrimaryVariant">@color/PrimaryClr2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ButtonClr1</item>
+        <item name="colorSecondaryVariant">@color/ButtonClr2</item>
+        <item name="colorOnSecondary">#2C2C2C</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:itemTextAppearance">@style/menuStyle</item>
+    </style>
+    <style name="menuStyle" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="IntroText" parent="@style/AppIntroDefaultText">
+        <item name="android:text">#D3B222</item>
+    </style>
+</resources>
