@@ -46,12 +46,7 @@ class ReceiptCreatorFragment : Fragment() {
         titleTextEditor = view.findViewById(R.id.receipt_name)
         bodyTextEditor = view.findViewById(R.id.receipt_body)
         typeSelector = view.findViewById(R.id.group_spinner)
-        if (receiptToEdit != null) {
-            titleTextEditor.setText(receiptToEdit?.title)
-            bodyTextEditor.setText(receiptToEdit?.body)
-            // Oh no, it's retarded
-            typeSelector.setSelection(ReceiptType.toInt(receiptToEdit?.type!!))
-        }
+
 
         ArrayAdapter.createFromResource(
                 requireContext(),
@@ -62,6 +57,12 @@ class ReceiptCreatorFragment : Fragment() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
             typeSelector.adapter = adapter
+        }
+
+        if (receiptToEdit != null) {
+            titleTextEditor.setText(receiptToEdit?.title)
+            bodyTextEditor.setText(receiptToEdit?.body)
+            typeSelector.setSelection(ReceiptType.toInt(receiptToEdit?.type!!))
         }
 
         saveButton.setOnClickListener {

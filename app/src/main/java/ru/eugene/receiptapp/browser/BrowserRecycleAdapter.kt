@@ -1,5 +1,6 @@
 package ru.eugene.receiptapp.browser
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,8 +37,9 @@ class BrowserRecycleAdapter (private var receipts: Array<IReceipt>) :
             bodyTextView.text = bodyText;
         }
 
+        @SuppressLint("SimpleDateFormat")
         fun setCreationDate(creationDate: Date) {
-            val dateFormat: DateFormat = SimpleDateFormat("dd-mm-yyyy hh:mm:ss")
+            val dateFormat: DateFormat = SimpleDateFormat("dd-mm-yyyy")
             dateTextView.text = dateFormat.format(creationDate)
         }
 

@@ -181,7 +181,7 @@ class BrowseFragment : Fragment(), SearchView.OnQueryTextListener {
         //set title for alert dialog
         builder.setTitle("About the app")
         //set message for alert dialog
-        builder.setMessage("This app was made by Evgeniy Bondarovich gr. 881074")
+        builder.setMessage("This app was made by Rjeey")
         builder.setIcon(android.R.drawable.ic_dialog_alert)
 
         //performing positive action
