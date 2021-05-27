@@ -10,8 +10,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="IntroSelected">#F1CB0F</color>
     <color name="IntroUnselected">#757575</color>
-    <color name="PrimaryClr1">#F1693F</color>
+    <color name="PrimaryClr1">#3B6FF1</color>
     <color name="PrimaryClr2">#F38B6A</color>
-    <color name="ButtonClr1">#FB4C15</color>
+    <color name="ButtonClr1">#F01584FB</color>
     <color name="ButtonClr2">#303030</color>
 </resources>
